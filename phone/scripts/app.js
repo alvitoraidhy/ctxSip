@@ -16,6 +16,7 @@ $(document).ready(function() {
             displayName     : user.Display,
             uri             : 'sip:'+user.User+'@'+user.Realm,
             wsServers       : user.WSServer,
+            stunServers     : ["stun:stun.l.google.com:19302"],
             registerExpires : 30,
             traceSip        : true,
             log             : {
